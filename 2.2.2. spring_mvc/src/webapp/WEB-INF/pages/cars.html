@@ -14,10 +14,10 @@
             <th>year</th>
         </tr>
 
-        <tr th:each="cars :${carsTable}">
-            <td th:utext="${cars.getModel()}">model</td>
-            <td th:utext="${cars.getNumber()}">number</td>
-            <td th:utext="${cars.getYear()}">year</td>
+        <tr th:each="car :${carsTable}">
+            <td th:utext="${car.getModel()}">model</td>
+            <td th:utext="${car.getNumber()}">number</td>
+            <td th:utext="${car.getYear()}">year</td>
         </tr>
     </table>
 </body>
